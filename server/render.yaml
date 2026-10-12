@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: secure-chat-server
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: "3000"
+      - key: ROOM_CODE
+        value: "445566"
